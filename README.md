@@ -1,7 +1,7 @@
 
 # simple_maven Project
 
-![build master](https://github.com/violet73/sample_maven/workflows/Java%20CI%20with%20Maven/badge.svg)
+![build master](https://github.com/violet73/simple_maven/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 This is lkl's project to learn how to integrate Maven build and test suites with Github Actions.
 
