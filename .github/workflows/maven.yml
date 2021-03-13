@@ -36,6 +36,11 @@ jobs:
         mvn test
         mvn cobertura:cobertura
         mvn cobertura:dump-datafile
+    - uses: codecov/codecov-action@v1
+      with:
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        verbose: true # optional (default = false)
     - name: Load coverage
       uses: actions/upload-artifact@master
       with:
