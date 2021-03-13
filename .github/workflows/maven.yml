@@ -28,5 +28,15 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - run: |
+        tree -a
     - name: Test with Junit
-      run: mvn test
+      run: |
+        mvn test
+        mvn cobertura:cobertura
+        mvn cobertura:dump-datafile
+    - name: Load coverage
+      uses: actions/upload-artifact@master
+        with:
+          name: target
+          path: target/
