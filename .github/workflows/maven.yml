@@ -37,6 +37,6 @@ jobs:
         mvn cobertura:dump-datafile
     - name: Load coverage
       uses: actions/upload-artifact@master
-        with:
+      with:
           name: target
           path: target/
