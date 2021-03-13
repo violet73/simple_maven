@@ -27,11 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
     - run: |
         tree -a
     - name: Test with Junit
       run: |
+        java -version
         mvn test
         mvn cobertura:cobertura
         mvn cobertura:dump-datafile
