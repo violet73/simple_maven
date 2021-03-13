@@ -35,7 +35,7 @@ jobs:
         java -version
         mvn cobertura:cobertura
         mvn cobertura:dump-datafile
-    - run: bash <(curl -s https://codecov.io/bash)
+    - run: bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
     - uses: codecov/codecov-action@v1
       with:
         flags: unittests # optional
