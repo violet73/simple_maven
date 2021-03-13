@@ -2,6 +2,7 @@
 # simple_maven Project
 
 ![build master](https://github.com/violet73/simple_maven/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![codecov](https://codecov.io/gh/violet73/simple_maven/branch/master/graph/badge.svg)](https://codecov.io/gh/violet73/simple_maven)
 
 This is lkl's project to learn how to integrate Maven build and test suites with Github Actions.
 
